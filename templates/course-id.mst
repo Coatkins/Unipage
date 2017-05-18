@@ -27,18 +27,18 @@
 <img src="/Home.png" alt="UTUni">
 
         <div class="course-page">
-                {{#courses}}
+                
                 <div class="course">
-                <a href ="/courses/{{id}}"> <h1 class="course-name">{{ name }} </h1></a>
+                <h1 class="course-name">{{ name }} </h1>
                 <p class="course-description">{{ description }} </p>
- <!--               <p class="course-entry_requirements">{{ entry_requirements }} </p>
+                <p class="course-entry_requirements">{{ entry_requirements }} </p>
                 <p class="course-location">{{ location }} </p>
                 <p class="course-date">{{ date }} </p>
                 <p class="course-duration">{{ duration }} </p>
                 <p class="course-mode_of_study">{{ mode_of_study }} </p>
-                <p class="course-price">{{ price }} </p> -->
+                <p class="course-price">{{ price }} </p>
             </div>
-        {{/courses}}
+        
     </div>
  <form action="/courses/search" method="get">
         

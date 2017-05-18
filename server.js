@@ -30,6 +30,18 @@ sqlite.open('./database.sqlite').then(function(db) {
         });
     });
     
+    app.get('/courses/:id', function(req, res) {
+        db.get(
+            "SELECT * FROM Courses WHERE id = $course_id",
+            {$course_id: req.params.id}
+        ).then(function(row) {
+            var file = fs.readFileSync('templates/course-id.mst', "utf8");
+            var html = Mustache.to_html(file, row);
+            return res.send(html);
+        
+        });
+    });
+    
     
     var server = http.createServer(app);
     console.log("Listening on http://127.0.0.1:8080");
