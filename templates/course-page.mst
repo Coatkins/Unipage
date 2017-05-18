@@ -44,7 +44,8 @@
         
         <input type="text" name="term" placeholder="Search...">
     </form>
-    
+
+<br>    
 <form action="/index.html" method="get">
 	<button>Home</button>
     </form>    

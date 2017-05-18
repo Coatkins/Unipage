@@ -17,7 +17,6 @@
     
     
 <h1 class="course_details"id="index">Course details</h1>
-	<script src="/app.js" type="text/javascript"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100|Heebo" rel="stylesheet">
@@ -40,15 +39,22 @@
             </div>
         
     </div>
+
+	<button id="add-to-basket" data-course-id = "{{id}}">Add to basket</button> 
+<br>
+<br>
+
  <form action="/courses/search" method="get">
         
         <input type="text" name="term" placeholder="Search...">
     </form>
-    
+
+<br>
 <form action="/index.html" method="get">
 	<button>Home</button>
     </form>    
-    
+ <script src="/app.js" type="text/javascript"></script>
+
 </body>
 </html>
 
