@@ -1,6 +1,7 @@
 body {
     background-color:dimgrey;
 	text-align: center;
+	margin: 0 0;
 }
 
 }
@@ -140,5 +141,13 @@ a.tablinks {
     text-align: center;
     color: white;
     
+}
+
+#header-basket {
+	float: right;
+	position:fixed;
+	top: 0;
+	right: 0;
+	padding: 10px 10px;
 }
 

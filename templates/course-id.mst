@@ -6,6 +6,11 @@
 </head>
 <body>
 
+<div id="header-basket">
+<img src="/basket.png" alt="UTUni" height="20" width="20">
+Basket: 
+<span id="basket-count">0</span> items
+</div>
    
    <div class="tab">
   <a class="tablinks" href="/courses">Courses</a>
